@@ -47,27 +47,32 @@ a:hover {
 }
 
 #food-img {
-     width: 300px;
-     height: 300px;
+     width: 290px;
+     height: 290px;
+     opacity: 0.85;
 }
 
 #food-img:hover {
-    opacity: 0.85;
+    opacity: 1;
+    width: 300px;
+    height: 300px;
+
 }
 
 #social-media-icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     padding: 10px;
 }
 
 #social-media-icon:hover {
-    opacity: 0.5;
+    opacity: 0.7;
+    width: 42px;
+    height: 42px;
+    padding: 10px;
 }
 
-#img-link:hover {
-    opacity: 0.5;
-}
+
 
 /* Header
 ----------------------------- */
@@ -79,7 +84,11 @@ header {
     position: fixed;
     z-index: 1;
     opacity: 0.85;
+    font-family: Karla;
+    word-spacing: 2px;
+  
 }
+
 
 /* Main
 ----------------------------- */
@@ -151,11 +160,25 @@ nav span {
     display: flex;
     background-color: #EEE4E1;
     justify-content: space-around;
+    padding: 30px;
     
 }
 
 .greeting {
     text-indent: 50px;
+}
+
+.sabrina .img-container {
+    weight: 430px;
+    height: 430px;
+    background-color: white;
+}
+
+.sabrina img {
+    width: 380px;
+    height: 380px;
+    padding-top: 12.5px;
+    
 }
 
 .sabrina {
@@ -168,10 +191,7 @@ nav span {
     text-align: left;
 }
 
-.sabrina img {
-    width: 400px;
-    height: 400px;
-}
+
 
 
 .vinh {
@@ -184,9 +204,17 @@ nav span {
     text-align: left;
 } 
 
+.vinh .img-container {
+    width: 425px;
+    height: 550px;
+    background-color: white;
+}
+
 .vinh img {
     width: 400px;
     height: 500px;
+    padding-top: 12.5px;
+    
 
 }
 
@@ -196,10 +224,16 @@ nav span {
 
 .recipes {
     background-color: #E7D8C9;
-    padding: 30px;
+    padding: 0 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.recipes h2 {
+    text-transform: uppercase;
+    font-family: Karla;
+    padding-top: 20px;
 }
 
 .recipes p {
@@ -209,7 +243,16 @@ nav span {
 .food-type {
     display: flex;
     width: 100%;
-    justify-content: space-around; 
+    justify-content: center; 
+    margin-top: 20px;
+}
+
+.food-type div {
+    margin: 0 40px;
+}
+
+.desserts, .asian-sweets {
+    border-bottom: 0.5px solid #B2967D;
 }
 
 /* Contact
