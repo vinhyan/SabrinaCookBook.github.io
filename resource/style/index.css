@@ -1,0 +1,288 @@
+/* Global styles 
+----------------------------- */
+
+body {
+    font-family: Montserrat;
+    font-size: 15px;
+    margin: 0;
+    line-height: 25px;
+    text-align: center;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #B2967D;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button {
+    background-color: #B2967D;
+    margin: 0 20px 0 20px;
+    padding: 5px; 
+}
+
+#button:hover {
+    color: white;
+    opacity: 0.7;
+    border: 0.5px solid black;
+    border-radius: 2px;
+}
+
+.section {
+    width: 80%;
+    margin: 50px auto;
+    border-top: 0.5px solid #B2967D;
+    padding-top: 20px;
+}
+
+#food-img {
+     width: 300px;
+     height: 300px;
+}
+
+#social-media-icon {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+#social-media-icon:hover {
+    opacity: 0.5;
+}
+
+/* Header
+----------------------------- */
+
+header {
+    background-color: #E6BEAE;
+    width: 100%;
+    padding: 15px;
+    position: fixed;
+    z-index: 1;
+    opacity: 0.85;
+}
+
+/* Main
+----------------------------- */
+
+main {
+    padding-top: 49px;
+}
+
+#logo {
+    width: 350px;
+    height: 350px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.navigator {
+    border-top: 0.5px solid #B2967D;
+    border-bottom: 0.5px solid #B2967D;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 80%;
+    margin: 0 auto;  
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+nav span {
+    padding: 0 120px;
+
+}
+
+.cover {
+    background-image: url("../image/cover-misc.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    margin: 50px auto;
+}
+
+.quote {
+    background: white;
+    width: 100%;
+    opacity: 0.80;
+    padding: 0;
+}
+
+.quote h2 {
+    font-size: 30px;
+    margin: 10px;
+    
+}
+
+.quote h3 {
+    font-size: 20px;
+    margin: 10px;
+    padding-top: 10px;
+}
+
+/* About
+----------------------------- */
+
+
+.about {
+    display: flex;
+    background-color: #EEE4E1;
+    justify-content: space-around;
+    
+}
+
+.greeting {
+    text-indent: 50px;
+}
+
+.sabrina {
+    padding: 40px 40px;
+    align-content: center;
+}
+
+.sabrina p {
+    width: 400px;
+    text-align: left;
+}
+
+.sabrina img {
+    width: 400px;
+    height: 400px;
+}
+
+
+.vinh {
+    padding: 40px 40px;
+}
+
+
+.vinh p {
+    width: 400px;
+    text-align: left;
+} 
+
+.vinh img {
+    width: 400px;
+    height: 500px;
+
+}
+
+
+/* Recipes
+----------------------------- */
+
+.recipes {
+    background-color: #E7D8C9;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.recipes p {
+    margin-bottom: 40px;
+}
+
+.food-type {
+    display: flex;
+    width: 100%;
+    justify-content: space-around; 
+}
+
+/* Contact
+----------------------------- */
+.contact {
+    background-color: #ECF8F8;
+    padding-top: 30px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+form p {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+input {
+    width: 40%;
+    background-color: #EEE4E1;
+    height: 40px;
+    font-size: 15px;
+    font-family: Montserrat;
+    border-radius: 5px;
+    border: none;
+    padding-top: 10px;
+}
+
+input:hover {
+    border: 0.5px solid #B2967D;
+}
+
+textarea {
+    width: 40%;
+    height: 200px;
+    background-color: #EEE4E1;
+    font-size: 15px;
+    font-family: Montserrat;
+    border-radius: 5px;
+    border: none;
+    padding-top: 10px;
+}
+
+textarea:hover {
+    border: 0.5px solid #B2967D;
+
+}
+
+button {
+    width: 40%;
+    height: 40px;
+    background-color: #E6BEAE;
+    font-size: 15px;
+    border: none;
+    font-family: Montserrat;
+    border-radius: 5px;
+    margin: 20px;
+
+}
+
+button:hover {
+    border: 0.5px solid #B2967D;
+    opacity: 0.85;
+}
+
+/* Social Media
+----------------------------- */
+
+.social-media {
+    background-color: #E7D8C9;
+    width: 100%;
+    padding-top: 10px;
+}
+
+
+
+/* Footer
+----------------------------- */
+
+footer span {
+    font-size: 12px;
+    margin: 10px;
+    padding-bottom: 20px;
+}
