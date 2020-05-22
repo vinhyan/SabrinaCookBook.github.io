@@ -47,15 +47,17 @@ a:hover {
 }
 
 #food-img {
-     width: 290px;
-     height: 290px;
+     width: 270px;
+     height: 270px;
      opacity: 0.85;
+     border: 8px solid white;
+
 }
 
 #food-img:hover {
     opacity: 1;
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
 
 }
 
@@ -249,6 +251,7 @@ nav span {
 
 .food-type div {
     margin: 0 40px;
+    
 }
 
 .desserts, .asian-sweets {
@@ -285,6 +288,8 @@ input:hover {
     border: 3px solid #E6BEAE;
 }
 
+
+
 textarea {
     width: 40%;
     height: 200px;
@@ -300,6 +305,8 @@ textarea:hover {
     border: 3px solid #E6BEAE;
 
 }
+
+
 
 button {
     width: 40%;
