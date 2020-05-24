@@ -1,2 +1,2 @@
 # SabrinaCookBook.github.io
-Codecademy challenge project
+Codecademy Build Company Homepage project challenge
