@@ -1,9 +1,12 @@
 /* Global styles 
 ----------------------------- */
+html {
+    font-size: 15px;
+    margin: 0;
+}
 
 body {
     font-family: Montserrat;
-    font-size: 15px;
     margin: 0;
     line-height: 25px;
     text-align: center;
@@ -26,6 +29,7 @@ a:hover {
     align-items: center;
 }
 
+
 #button {
     background-color: #B2967D;
     margin: 0 20px 0 20px;
@@ -40,7 +44,8 @@ a:hover {
 }
 
 .section {
-    width: 80%;
+    max-width: 1100px;
+    width: 85%;
     margin: 50px auto;
     border-top: 0.5px solid #B2967D;
     padding-top: 20px;
@@ -91,12 +96,26 @@ header {
   
 }
 
+.header-button {
+    background-color: #B2967D;
+    margin: 0 20px 0 20px;
+    padding: 5px; 
+}
+
+.header-button:hover {
+    color: white;
+    opacity: 0.7;
+    border: 0.5px solid black;
+    border-radius: 2px;
+}
+
 
 /* Main
 ----------------------------- */
 
 main {
-    padding-top: 49px;
+    padding-top: 55px;
+    width: 100%;
 }
 
 #logo {
@@ -106,23 +125,32 @@ main {
     margin: 0 auto;
 }
 
-.navigator {
-    border-top: 0.5px solid #B2967D;
-    border-bottom: 0.5px solid #B2967D;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 80%;
-    margin: 0 auto;  
-}
+
 
 nav {
+    border-top: 0.5px solid #B2967D;
+    border-bottom: 0.5px solid #B2967D;
+    max-width: 1100px;
+    margin: 0 auto;
+    height: auto;
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;   
+    
 }
 
-nav span {
-    padding: 0 120px;
+
+nav ul {
+    list-style-type: none;
+    padding: 5px;
+    margin: 0;
+    width: 100%;
+
+}
+
+nav li {
+    padding: 0 60px;
+
 
 }
 
@@ -160,65 +188,54 @@ nav span {
 
 .about {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     background-color: #EEE4E1;
-    justify-content: space-around;
-    padding: 30px;
-    
-}
-
-.greeting {
-    text-indent: 50px;
-}
-
-.sabrina .img-container {
-    weight: 430px;
-    height: 430px;
-    background-color: white;
-}
-
-.sabrina img {
-    width: 380px;
-    height: 380px;
-    padding-top: 12.5px;
-    
+    padding: 40px;
 }
 
 .sabrina {
-    padding: 40px 40px;
-    align-content: center;
+    width: 450px;
+    padding: 20px;
+}
+
+.sabrina img {
+    width: 430px;
+    height: 430px;
+    border-top: 10px solid white;
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+    border-bottom: 40px solid white;
+    
 }
 
 .sabrina p {
-    width: 400px;
+    width: 450px;
     text-align: left;
 }
-
-
-
 
 .vinh {
-    padding: 40px 40px;
-}
+    width: 450px;
+    padding: 20px;
 
-
-.vinh p {
-    width: 400px;
-    text-align: left;
-} 
-
-.vinh .img-container {
-    width: 425px;
-    height: 550px;
-    background-color: white;
 }
 
 .vinh img {
-    width: 400px;
-    height: 500px;
-    padding-top: 12.5px;
-    
+    width: 430px;
+    height: 530px;
+    border-top: 10px solid white;
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+    border-bottom: 40px solid white;
 
 }
+
+.vinh p {
+    width: 430px;
+    text-align: left;
+}
+
+
 
 
 /* Recipes
@@ -343,4 +360,148 @@ footer span {
     font-size: 12px;
     margin: 10px;
     padding-bottom: 20px;
+    width: 100%;
+}
+
+
+/* Responsiveness
+----------------------------- */
+@media only screen and (max-width: 580px) {
+
+    header {
+        background-color: #E6BEAE;
+        width: 100%;
+        padding: 10px 0;
+        position: fixed;
+        z-index: 1;
+        opacity: 0.85;
+        font-family: Karla;
+        word-spacing: 2px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 10px;
+
+    }
+
+    header span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-button {
+        width: 60%;
+        padding: 0 2px 0 2px;
+        font-size: 7px;
+
+    }
+
+    main {
+        padding-top: 70px;
+    }  
+    
+
+
+
+    #logo {
+        width: 250px;
+        height: 250px;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+  
+}
+
+@media only screen and (min-width: 650px) {
+
+
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        padding: 5px;
+        margin: 0;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+
+}    
+
+
+
+
+@media only screen and (max-width: 1250px) {
+
+   
+
+    .food-type {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center; 
+        margin-top: 20px;
+    }
+
+}
+
+
+@media only screen and (max-width: 650px) {
+
+    .sabrina {
+        width: 225px;
+    }
+    
+    
+    .sabrina img {
+        width: 225px;
+        height: 225px;
+    }
+
+    .sabrina p {
+        width: 225px;
+    }
+
+    .vinh {
+        width: 225px;
+    }
+    
+    
+    .vinh img {
+        width: 225px;
+        height: 275px;
+    }
+
+    .vinh p {
+        width: 225px;
+    }
+
+    #food-img {
+        width: 250px;
+        height: 250px;
+    }
+
+
+
+
+}    
+
+
+
+
+
+
+
+@media only screen and (max-width: 725px) {
+
+    footer {
+        display: flex;
+        
+    }
+
+    footer span {
+        font-size: 7px;
+        margin: 5px;
+    }
 }
